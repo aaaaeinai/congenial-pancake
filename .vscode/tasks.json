@@ -6,12 +6,12 @@
         {
             "label": "Just Monika 2 app ($ python)",
             "type": "shell",
-            "command": "python LogInApp.py"
+            "command": "python app.py"
         },
         {
             "label": "Just Monika 3 app ($ py)",
             "type": "shell",
-            "command": "py LogInApp.py"
+            "command": "py app.py"
         }
     ]
 }

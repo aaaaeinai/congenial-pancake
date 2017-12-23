@@ -28,7 +28,7 @@ class LoginApp(tk.Tk):
 
         self.frames = {}
 
-        for everyFrame in (StartPage, PageOne, PageTwo):
+        for everyFrame in (StartPage, PageOne, PageTwo, PageThree):
             frame = everyFrame(container, self)
 
             self.frames[everyFrame] = frame
@@ -64,6 +64,10 @@ class StartPage(tk.Frame):
         button2 = ttk.Button(self, text="Visit Page 2",
                             command=lambda: controller.show_frame(PageTwo))
         button2.pack()
+
+        button3 = ttk.Button(self, text="Visit Page 3",
+                            command=lambda: controller.show_frame(PageThree))
+        button3.pack()
 
 class PageOne(tk.Frame):
 
@@ -106,9 +110,7 @@ class PageThree(tk.Frame):
                             command=lambda: controller.show_frame(StartPage))
         button1.pack()
 
-        button2 = ttk.Button(self, text="Visit Page 1",
-                            command=lambda: controller.show_frame(PageOne))
-        button2.pack()
+        f = Figure(figsize=(5,5), dpi=100)
 
 app = LoginApp()
 app.mainloop()
