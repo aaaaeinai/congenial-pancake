@@ -19,7 +19,7 @@ class LoginApp(tk.Tk):
         tk.Tk.__init__(self, *args, **kwargs)
 
         tk.Tk.iconbitmap(self, default="cause_trouble.ico")
-        tk.Tk.wm_title(self, "Sea of BTC client")
+        tk.Tk.wm_title(self, "BTC flux")
 
         container = tk.Frame(self)
         container.pack(side="top", fill="both", expand=True)
